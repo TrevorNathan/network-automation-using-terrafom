@@ -19,7 +19,7 @@ provider "google" {
 # Create the mynetwork network
 # # --------------------------------------------------------------
 resource "google_compute_network" "my_network" {
-  name                    = "my_network"
+  name                    = var.var_network
   auto_create_subnetworks = true
 }
 
